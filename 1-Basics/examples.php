@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class Animal.
+ * Class Animal
  */
 class Animal {
 
@@ -25,6 +25,24 @@ $my_animal->setSpecies('Cat');
 $leg_count = $my_animal->number_of_legs;
 
 print "My animal has " . $leg_count . " legs\n";
+
+/**
+ * Class Mammal
+ *
+ * This class extends the Animal class. It will inherit things from it.
+ */
+class Mammal extends Animal {
+  // There is nothing in here.
+}
+
+// Instantiating a new object. This time of class Mammal.
+$my_mammal = new Mammal;
+
+// Accessing a property within the object, which is inherited from the parent class.
+$mammal_leg_count = $my_mammal->number_of_legs;
+
+print "My mammal has " . $leg_count . " legs\n";
+
 
 /**
  * Class UtilityClassOfSomeSort
