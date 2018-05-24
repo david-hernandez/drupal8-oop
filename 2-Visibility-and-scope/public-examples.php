@@ -9,7 +9,7 @@ class Animal {
   public $number_of_legs = 4;
 
   // Method.
-  function setSpecies($species) {
+  public function setSpecies($species) {
     // Do some stuff.
   }
 
@@ -42,23 +42,3 @@ $my_mammal = new Mammal;
 $mammal_leg_count = $my_mammal->number_of_legs;
 
 print "My mammal has " . $mammal_leg_count . " legs\n";
-
-
-/**
- * Class UtilityClassOfSomeSort
- *
- * A class we will use without instantiating an object.
- */
-class UtilityClassOfSomeSort {
-
-  public static function getTodaysDate() {
-    date_default_timezone_set('UTC');
-    return date('Y-m-d');
-  }
-
-}
-
-// Use the class and method in it without instantiating an object.
-$date = UtilityClassOfSomeSort::getTodaysDate();
-
-print "Today's date is: " . $date . "\n";

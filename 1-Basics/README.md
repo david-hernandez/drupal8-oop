@@ -32,6 +32,9 @@ from the parent.
 class Mammal extends Animal {
  
 }
+ 
+$my_mammal = new Mammal;
+$my_mammal->setSpecies('Cat');  <== Mammal inherits this from Animal.
 ```
 
 ### Method
