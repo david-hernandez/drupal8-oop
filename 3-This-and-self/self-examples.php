@@ -7,9 +7,16 @@
  */
 class DateUtility {
 
+  protected static $label = "Today's date is: ";
+
   public static function getTodaysDate() {
     date_default_timezone_set('UTC');
-    return date('Y-m-d');
+    $date = date('Y-m-d');
+
+    // self is used to access the static property.
+    $text = self::$label;
+
+    return $text . $date;
   }
 
 }
@@ -17,4 +24,4 @@ class DateUtility {
 // Use the class and method in it without instantiating an object.
 $date = DateUtility::getTodaysDate();
 
-print "Today's date is: " . $date . "\n";
+print $date . "\n";
