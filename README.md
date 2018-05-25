@@ -23,3 +23,13 @@ but do not expect an explanation of plugins and services and whatnot.
 
 The PHP files provided in this tutorial should be executable, but your results may vary. And, as always, If you find 
 any mistakes, please open an issue or create a pull request. Don't assume I know what I'm doing.&trade;
+
+### Contents
+
+* 1 - Methods, properties, the arrow (`->`) and double colon (`::`) operators
+* 2 - Public, protected, private, static keywords
+* 3 - `$this` and `self`
+* 4 - `__construct` methods
+* 5 - How classes work together, inherit methods and properties, and `parent`
+* 6 - Naming conventions for classes, methods, variables, constants, etc
+* 7 - Including classes from other files and using an autoloader
