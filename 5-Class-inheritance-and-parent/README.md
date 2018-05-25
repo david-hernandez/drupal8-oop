@@ -1,4 +1,4 @@
-# Class Inheritance
+# Class Inheritance and using `parent`
 
 Class inheritance is an important topic when dealing with a large application like Drupal, or a framework like Symfony, 
 on which Drupal is based. The whole point of a framework is to provide utility so you don't have to do most of the work.
