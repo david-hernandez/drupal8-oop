@@ -33,3 +33,5 @@ any mistakes, please open an issue or create a pull request. Don't assume I know
 * 5 - How classes work together, inherit methods and properties, and `parent`
 * 6 - Naming conventions for classes, methods, variables, constants, etc
 * 7 - Including classes from other files and using an autoloader
+* 8 - Name spacing and how it relates to the autoloader
+* 9 - Using namespaces, `use` statements, and more on the global space
