@@ -143,7 +143,7 @@ What's in that file?
 return require __DIR__ . '/vendor/autoload.php';
 ```
 
-The `vendor` directory is where Compose puts everything. Well, what's in that file?
+The `vendor` directory is where Composer puts everything. Well, what's in that file?
 
 ```$xslt
 <?php
