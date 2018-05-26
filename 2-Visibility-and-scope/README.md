@@ -3,13 +3,13 @@
 http://php.net/manual/en/language.oop5.visibility.php
 http://php.net/manual/en/language.variables.scope.php
 
-Visibility and scope are import in dictating how a class and the things inside them (methods and properties) 
-are used.
+Visibility and scope are import in dictating how a class and the things inside it (methods and properties) are used. 
+Visibility is declared by using a specific keyword.
 
 ### Public
 
 When something is declared public, it is accessible everywhere. From an instantiated object, from a child class, 
-and within the class itself. When a method is not specified as public, protected, or private, it defaults to public.
+and within the class itself. Public is the default visibility, if none is specified.
 
 ```$xslt
 class Animal {
@@ -57,10 +57,10 @@ $leg_count = $my_mammal->number_of_legs;  <== NOPE, too.
 
 ```
 
-Why do we do this? It seems rather unfair to the object. Well, this is part of software design. When you work 
-with a class, the things you have access to are like the API of that class. Think of each as their own  little 
-application. The designer may have some things that are internal and not intended to be used directly. These things 
-tend to be utility in nature and help the class operate, but wouldn't be useful to anyone using the object. 
+Why do we do this? It seems rather unfair to the object. Well, this is part of software design. The things you have 
+access to in a class are like the API of that class. Think of each as their own  little application. The designer may 
+have some things that are internal and not intended to be used directly. These things tend to be utility in nature and 
+help the class operate, but wouldn't be useful to anyone using the object. 
 
 Making things protected can prevent future errors by preventing people from using them in ways not intended. Especially, 
 when those things might change. For example, what if I want to rename `$number_of_legs`? That would be an API break, 
@@ -68,7 +68,7 @@ if I'm letting people use it.
 
 You will, of course, note that while the object does not have access to protected things, a class that extends it does. 
 This is like the company you purchased your dishwasher from refusing to send you the maintenance manual and parts 
-catalog for your dishwasher, but they will send it to a licensed repair company they work with.
+catalog, but they _will_ send it to a licensed repair company they work with.
 
 ### Private
 
@@ -117,7 +117,7 @@ returning the correct value from `getAnimalLegs()`.
 ### Static
 
 Static access is an important thing to understand. When something is declared static, it is accessible without an instantiated object. This is when you see the double 
-colon (`::`) used. It is used with other keywords.
+colon (`::`) used. Static is used with other keywords.
 
 ```$xslt
 class Animal {
@@ -149,7 +149,7 @@ Declaring the property public means we can access it from an object and everywhe
 means we can also access it without an object. Since it has a default value set (`4`) we would be able to retrieve 
 that value directly from the class.
 
-The format for doing this is to write the class name, `Animal`, followed by a double colon, then the method or property we 
+The format for doing this is to write the class name, `Animal`, followed by a double colon, then the member we 
 want to access. Notice that in the case of a property, we use a dollar sign (`$`) to identify the property. We did not do 
 this with the arrow operator (`->`). Just remember that there will always be at least one dollar sign when dealing 
 with properties. Either there is an object which will have one, or the property will. There will not be two.
@@ -163,8 +163,8 @@ public static function setSpecies($species) {
 Animal::setSpecies('Cat');
 ```
 
-The same is true for this method. We can access the method directly, without an object, and tell it to do work. In this 
-case, we can also feed it a value, `Cat`, and assume it will do something with it.
+The same is true for this method. We can access the method without an object and tell it to do work. In this 
+case we can also feed it a value, `Cat`, and assume it will do something with it.
 
 #### So why is this a bad example?
 
@@ -192,6 +192,6 @@ $my_date = DateTime::createFromFormat('Y-m-d', $some_timestamp);
 We aren't asking the `DateTime` class to store anything or create a new object. We ask it to do work, and return the 
 result.
 
-**Before all the advanced students say anything about this not being one hundred percent true, and the ways you can 
+**Before all the advanced students say anything about this not being completely true, and the ways you can 
 make static methods and properties hold data and do fancy things, I know. But we're not aiming for a Masters 
 degree in PHP here. Let's walk before we run.**

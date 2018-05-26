@@ -18,10 +18,10 @@ class Animal {
 // Instantiating a new object.
 $my_animal = new Animal;
 
-// Accessing a method within the object, using the arrow operator.
+// Accessing a method in the object with the arrow operator.
 $my_animal->setSpecies('Cat');
 
-// Accessing a property within the object.
+// Accessing a property in the object.
 $leg_count = $my_animal->number_of_legs;
 
 print "My animal has " . $leg_count . " legs\n";
@@ -38,7 +38,7 @@ class Mammal extends Animal {
 // Instantiating a new object. This time of class Mammal.
 $my_mammal = new Mammal;
 
-// Accessing a property within the object, which is inherited from the parent class.
+// Accessing a property in the object, which is inherited from the parent class.
 $mammal_leg_count = $my_mammal->number_of_legs;
 
 print "My mammal has " . $mammal_leg_count . " legs\n";
