@@ -5,8 +5,7 @@ struggling with the fundamentals needed for Drupal 8 development. Drupal 8 is a 
 compared to the procedural programming of previous versions of Drupal.
 
 Almost everything in this tutorial is specific to PHP, not necessarily Drupal. Any PHP developer may 
-find it helpful, but be aware that all of the examples and some application-specific details will be based 
-on Drupal 8.
+find it helpful, but be aware that some of the examples and application-specific details will be based on Drupal 8.
 
 ### Prereqiusites
 
@@ -27,11 +26,11 @@ any mistakes, please open an issue or create a pull request. Don't assume I know
 ### Contents
 
 * 1 - Methods, properties, the arrow (`->`) and double colon (`::`) operators
-* 2 - Public, protected, private, static keywords
+* 2 - Public, protected, private, and static keywords
 * 3 - `$this` and `self`
 * 4 - `__construct` methods
 * 5 - How classes work together, inherit methods and properties, and `parent`
 * 6 - Naming conventions for classes, methods, variables, constants, etc
 * 7 - Including classes from other files and using an autoloader
-* 8 - Name spacing and how it relates to the autoloader
+* 8 - Namespacing and how it relates to the autoloader
 * 9 - Using namespaces, `use` statements, and more on the global space
