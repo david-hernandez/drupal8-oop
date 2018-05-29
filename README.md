@@ -25,12 +25,13 @@ any mistakes, please open an issue or create a pull request. Don't assume I know
 
 ### Contents
 
-* 1 - Methods, properties, the arrow (`->`) and double colon (`::`) operators
-* 2 - Public, protected, private, and static keywords
-* 3 - `$this` and `self`
-* 4 - `__construct` methods
-* 5 - How classes work together, inherit methods and properties, and `parent`
-* 6 - Naming conventions for classes, methods, variables, constants, etc
-* 7 - Including classes from other files and using an autoloader
-* 8 - Namespacing and how it relates to the autoloader
-* 9 - Using namespaces, `use` statements, and more on the global space
+* 01 - Methods, properties, the arrow (`->`) and double colon (`::`) operators
+* 02 - Public, protected, private, and static keywords
+* 03 - `$this` and `self`
+* 04 - `__construct` methods
+* 05 - How classes work together, inherit methods and properties, and `parent`
+* 06 - Naming conventions for classes, methods, variables, constants, etc
+* 07 - Including classes from other files and using an autoloader
+* 08 - Namespacing and how it relates to the autoloader
+* 09 - Using namespaces, `use` statements, and more on the global space
+* 10 - Declaring parameter types in method and function definitions
