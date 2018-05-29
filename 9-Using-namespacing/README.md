@@ -200,3 +200,25 @@ Generally, in those places you write the class as its namespace with a backslash
 it will be used, and in all likelihood, it will be used inside a class. Since those sort of dynamic uses can't add a 
 `use` statement on the fly, they expect the whole thing written out. Like with the `Request` example above. 
 `\Symfony\Component\HttpFoundation\Request::createFromGlobals()`
+
+### Aliasing
+
+Last but not least, you can alias the class reference. If for some reason you want to refer to the class by a different 
+name, or need to use multiple classes with the same name, you can give one an alias. Just put `as` in the `use` statement.
+
+```$xslt
+<?php
+ 
+// Some DavidsPage.php file in a Drupal module.
+ 
+namespace Drupal\my_module\Controller;
+ 
+use Symfony\Component\HttpFoundation\Request as DavidRocks;
+ 
+class DavidsPage {
+ 
+    public function someMethod() {
+        $request = DavidRocks::createFromGlobals();
+    }
+ 
+}
