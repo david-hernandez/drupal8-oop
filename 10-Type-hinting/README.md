@@ -1,10 +1,11 @@
 # Type Hinting (also called type declaration)
 
+http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration
+
 Type hinting is when you specify a variable's type in a method or function definition. (The `function foo($var) {` is the 
-definition.) You're basically defining the 
-requirements. PHP is a loosely (weak) typed language. That means you don't have to explicitly declare variable types. 
-You can just dump text or integers or whatever into a variable. And you can do the same when defining parameters for 
-your methods and functions. That introduces some problems.
+definition.) You're basically defining the requirements. PHP is a loosely (weak) typed language. That means you don't 
+have to explicitly declare variable types. You can just dump text or integers or whatever into a variable. And you can 
+do the same when defining parameters for your methods and functions. That introduces some problems.
 
 ```$xslt
 function display_creature($creature) {
