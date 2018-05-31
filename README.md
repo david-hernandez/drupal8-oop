@@ -23,6 +23,10 @@ but do not expect an explanation of plugins and services and whatnot.
 The PHP files provided in this tutorial should be executable, but your results may vary. And, as always, If you find 
 any mistakes, please open an issue or create a pull request. Don't assume I know what I'm doing.&trade;
 
+If you are using an IDE, like PHP Storm, it may alert you to problems with some of the classes. This is because it sees 
+the classes in all the directories and may think they are duplicate. The scripts themselves should run fine when 
+executing.
+
 ### Contents
 
 * 01 - Methods, properties, the arrow (`->`) and double colon (`::`) operators
@@ -36,3 +40,4 @@ any mistakes, please open an issue or create a pull request. Don't assume I know
 * 09 - Using namespaces, `use` statements, and more on the global space
 * 10 - Declaring parameter types in method and function definitions
 * 11 - Interfaces
+* 12 - Abstract classes, and using them as base classes.
