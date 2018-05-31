@@ -46,7 +46,7 @@ class Animal implements LivingThing {
 /**
  * Class Plant
  */
-class Plant implements LivingThing  {
+class Plant implements LivingThing {
 
   protected $species;
   protected $flowering = TRUE;
@@ -70,7 +70,7 @@ class Plant implements LivingThing  {
   }
 
   public function getFlowering() {
-    return $this->$flowering;
+    return $this->flowering;
   }
 
 }

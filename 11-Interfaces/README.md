@@ -4,7 +4,8 @@ http://php.net/manual/en/language.oop5.interfaces.php
 
 Interfaces are not functional code by themselves. They serve as a template of sorts for actual classes. You may have 
 heard people say an interface provides a "contract" that must be fulfilled. The interface will provide definitions for 
-methods and properties. It will not provide the actual contents.
+methods and constants (also called their "signature",) but not properties. It will also not provide the actual contents 
+of the methods.
 
 ```$xslt
 interface LivingThing {
