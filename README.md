@@ -40,4 +40,5 @@ executing.
 * 09 - Using namespaces, `use` statements, and more on the global space
 * 10 - Declaring parameter types in method and function definitions
 * 11 - Interfaces
-* 12 - Abstract classes, and using them as base classes.
+* 12 - Abstract classes, and using them as base classes
+* 13 - Using traits to reuse code
