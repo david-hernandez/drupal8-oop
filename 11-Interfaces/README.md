@@ -163,3 +163,11 @@ interface BlockPluginInterface {
     
 }
 ```
+
+And, by the way, you can implement more than one interface. When you do, you have to fulfill the contracts of all of 
+them.
+
+```php
+class Foo implements FooInterface, BarInterface, BazInterface {
+```
+
