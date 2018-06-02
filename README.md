@@ -45,3 +45,4 @@ any mistakes, please open an issue or create a pull request. Don't assume I know
 * 14 - Using factories to generate objects
 * 15 - Late static binding and how it works with Drupal's dependency injection
 * 16 - Tips to help you on your journey
+* 17 - Let's take all we've learned and build an application

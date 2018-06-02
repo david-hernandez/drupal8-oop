@@ -19,10 +19,10 @@ class Renderer {
    * @param OrganismInterface $organism
    */
   public static function renderOrganism(OrganismInterface $organism) {
-    print $organism->getSpecies() . "\n";
+    print "\n" . $organism->getSpecies() . "\n";
     print "-----------------------------------\n";
     print "ID: " . $organism->getId() . ", Kingdom: " . $organism->getKingdom() . "\n";
-    print "Description: " . $organism->getDescription() . "\n";
+    print "Description: " . $organism->getDescription();
   }
 
 }
