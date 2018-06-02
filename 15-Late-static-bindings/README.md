@@ -81,7 +81,7 @@ class Foo {
     }
     
     public static function create($thing) {
-        // We can take something from the generic thing and use it.
+        // We can take something from the generic $thing and use it.
         // Let's assume it's an array of options.
         return new static($thing[0]);
     }
@@ -149,7 +149,7 @@ class Animal extends Kingdom {
 $animal = Animal::create($thing);
 ```
 
-This won't work. The create method would inherit to `Animal`, but it would try to return an instantiated instance of 
+This won't work. The create method would inherit to `Animal`, but it would try to return an instance of 
 `Kingdom`. `self` would refer to the `Kingdom` class name. (The constructor in `Kingdom` would also inherit down to 
 `Animal` so there is no problem passing `$stuff`.)
 
