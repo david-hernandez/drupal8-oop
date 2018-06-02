@@ -17,6 +17,11 @@ interface OrganismInterface {
    */
   public function getId();
 
+  /**
+   * Retrieve the kingdom nme.
+   *
+   * @return string
+   */
   public function getKingdom();
 
   /**

@@ -10,6 +10,11 @@ namespace Classes\Traits;
  */
 trait OrganismUtilitiesTrait {
 
+  /**
+   * Retrieve the kingdom nme.
+   *
+   * @return string
+   */
   public function getKingdom() {
     return $this->kingdom;
   }
