@@ -64,7 +64,7 @@ Then, the eventual class name.
 
 This needs explaining. If you look at any Drupal module you will notice that all these classes are in a directory 
 called `src`. But, you're thinking, that isn't in the namespace. This is one of those conventions. It is common 
-convention fo PHP applications to put their source files in a `src` directory. While the autoloader doesn't explicitly 
+convention for PHP applications to put their source files in a `src` directory. While the autoloader doesn't explicitly 
 require it, Drupal does.
 
 In the previous step that talked about the autoloader, I looked at Drupal's `index.php` file and showed the line where 
@@ -95,7 +95,7 @@ namespace because it will be assumed.
 #### backslash \
 
 The second thing that needs explaining. If you've never dealt with it before, the backslash at the beginning of the 
-namespace, or class reference, refers to the "global namespace". This tells PHP, "start at the beginning." OR, 
+namespace, or class reference, refers to the "global namespace". This tells PHP, "start at the beginning." Or, 
 "start at the root." Whatever. It affects scope.
 
 When you refer to classes in your code, you are basically at the root level. The stuff you are doing in these 
@@ -118,14 +118,14 @@ class DavidsPage {
 }
 ```
 
-The `namespace` line declares this classes namespace. This is based in part on the directory structure, because of 
+The `namespace` line declares this class's namespace. This is based in part on the directory structure, because of 
 the autoloader, and will be used by other classes to load this class. When in the actual file, it does not need the 
-class name at the end because the class it defined here. Its name is right below.
+class name at the end because the class is defined here. Its name is right below.
 
-As explained above, we also do not need the backslash (\) at the beginning because the `namespace` line is right at the 
+As explained above, we also do not need the backslash (\\) at the beginning because the `namespace` line is right at the 
 top of the file. It is in the global space. It is not inside the class.
 
-If I put the backslash there, it would be ok. It will still work. PHP won't complain. It just isn't necessary, so we don't 
+If I put the backslash there, it will be ok. It will still work. PHP won't complain. It just isn't necessary, so we don't 
 do it. The problem this really solves is name collisions between the name of something inside the file and something 
 we want to access outside the file, but we're always dealing with one class per file so it doesn't come up with the 
 `namespace` line. That does, however, still become an issue when we are working inside the class. We'll get to that 
