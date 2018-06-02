@@ -5,8 +5,8 @@ https://www.php-fig.org/psr/psr-1/
 In a lot of applications, including Drupal 8, you will notice a pattern for how things are named. Just get used to it.
 
 Does it matter, beyond the scope of what PHP requires for naming functions and variables, what you name your class or 
-its members? For the most part, no, but naming conventions help a lot with readability and predictability. This are 
-import factors in communication. By simply looking at the things you are talking about, people know what they are. So 
+its members? For the most part, no, but naming conventions help a lot with readability and predictability. These are 
+import factors in communication. By simply looking at the things you are talking about people know what they are. So 
 when I mention a class just by its name, people are more likely to know I'm referring to a specific class and not a 
 function or something else.
 
@@ -67,14 +67,16 @@ and it helps to keep those lines short.
 
 ```$xslt
 if ($my_clients_first_name == 'John' || $my_clients_last_name == 'Doe') {
-$result = MyUtilityClass::publicMethod($wow_why_is_this_so_long, $and_another_variable, $this_will_wrap_soon)
+    $result = MyUtilityClass::publicMethod($wow_why_is_this_so_long, $and_another_variable, $this_will_wrap_soon)
+}
 ```
 
 These lines are hard to read.
 
 ```$xslt
 if ($first_name == 'John' || $last_name == 'Doe') {
-$result = MyUtilityClass::publicMethod($content, $date, $tags)
+    $result = MyUtilityClass::publicMethod($content, $date, $tags)
+}
 ```
 
 Much better.
