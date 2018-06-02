@@ -4,13 +4,12 @@ When using a class in your code, you've seen how you can access properties and m
 you have an instance of a class, and the double colon (`::`) is used when you access static members. ("Members" just 
 means the things in a class, like properties and methods. It's shorter.) 
 
-Inside of a class you'll need to access things, too. Since you can't refer to the class or object by its name, (because 
-you don't know what it is, in the case of an object,) this is what `$this` and `self` are for.
+Inside of a class you'll need to access things, too. This is what `$this` and `self` are for.
 
 ### `$this`
 
-When there exists an instance of the class, `$this` will let you refer to members, including their current values. 
-Notice it has a dollar sign. Dollar signs equals data. Whenever you are dealing with a unique instance of something, a 
+When there exists an instance of the class, `$this` will let you refer to members and their current values. 
+Notice it has a dollar sign. Dollar signs equal data. Whenever you are dealing with a unique instance of something, a 
 plain old variable, and object, whatever, there will be a dollar sign involved.
 
 Oh, and look, we use the arrow operator with it. Just like we do when we have an object and use its name to access 
