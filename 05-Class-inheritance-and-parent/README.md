@@ -1,5 +1,7 @@
 # Class Inheritance and using `parent`
 
+http://php.net/manual/kr/keyword.parent.php
+
 Class inheritance is an important topic when dealing with a large application like Drupal, or a framework like Symfony, 
 on which Drupal is based. The whole point of a framework is to provide utility so you don't have to do most of the work.
 
@@ -46,8 +48,8 @@ print $my_cat->getSpecies();
 The first print statement will print 'Dog'. The second will print 'Cat'.
 
 When a class extends another they basically get merged together. When dealing with `$my_cat`, it will contain everything 
-from `Cat` and `Animal`, but since they are merged together the members of the two classes can't have the same names. If 
-they do, the ones in the child class win. This is intentional.
+from `Cat` and `Animal`, but since they are merged together name conflicts are won by the child class. This is 
+intentional.
 
 In the example above, when `$my_cat` is created the constructor is run. Even though it resides in the parent class, it is 
 still run. The two classes work together, and the constructor is treated no different than if it was part of `Cat`.
