@@ -7,6 +7,8 @@ included. When you have methods you want to reuse, and not copy and paste them a
 a trait and include the trait in your class. Since they are similar to classes, and not just a file you dump functions 
 in, they gain all the benefits of namespacing and autoloading. That makes it much easier to find them and include them.
 
+In PHP you cannot extend multiple classes, so traits solve the problem of getting functionality from multiple places.
+
 Let's take the `getKingdom()` method from the abstract class example and put it in a trait.
 
 ```$xslt
