@@ -6,10 +6,10 @@ use Classes\Bases\OrganismBase;
 use Classes\Traits\OrganismUtilitiesTrait;
 
 /**
- * Class Animal
+ * Class Plant
  * @package Classes\Organisms
  */
-class Animal extends OrganismBase {
+class Plant extends OrganismBase {
 
   /**
    * Include the trait that gives is the getKingdom() method.
@@ -19,33 +19,30 @@ class Animal extends OrganismBase {
   /**
    * We can hard-code the kingdom name as a default value because it shouldn't change.
    */
-  protected $kingdom = 'Animal';
+  protected $kingdom = 'Plant';
 
-  protected $number_of_legs;
-  protected $food;
+  protected $flowering = TRUE;
 
   /**
-   * Animal constructor.
+   * Plant constructor.
    *
    * This will override the constructor from OrganismBase, but we still run it with the parent:: keyword to that it will
    * set the id and species. No sense duplicating that functionality.
    *
    * @param $id
    * @param $species
-   * @param $legs
-   * @param $food
+   * @param $flowering
    */
-  public function __construct($id, $species, $legs, $food) {
+  public function __construct($id, $species, $flowering) {
     // We let the parent OrganismBase set the species. We get the full $organism from the factory, but the base class
     // doesn't care about the factory.
     parent::__construct($id, $species);
 
-    $this->number_of_legs = $legs;
-    $this->food = $food;
+    $this->flowering = $flowering;
   }
 
   /**
-   * This static method will return an instance of itself (Animal) while providing the correct arguments.
+   * This static method will return an instance of itself (Plant) while providing the correct arguments.
    *
    * @param array $organism
    * @return static
@@ -53,32 +50,10 @@ class Animal extends OrganismBase {
   public static function create(array $organism) {
     $id = $organism['Id'];
     $species = $organism['Species'];
-    $legs = $organism['Legs'];
-    $food = $organism['Food'];
+    $flowering = $organism['Flowering'];
 
     // Late static binding. These pass to the constructor. Look at the factory.
-    return new static($id, $species, $legs, $food);
-  }
-
-  /**
-   * @param $number
-   */
-  public function setNumberOfLegs($number) {
-    $this->number_of_legs = $number;
-  }
-
-  /**
-   * @return integer
-   */
-  public function getNumberOfLegs() {
-    return $this->number_of_legs;
-  }
-
-  /**
-   * @return string
-   */
-  public function getFavoriteFood() {
-    return $this->food;
+    return new static($id, $species, $flowering);
   }
 
   /*
@@ -87,9 +62,26 @@ class Animal extends OrganismBase {
    * @return string
    */
   public function getDescription() {
-    $legs_text = "It has " . $this->getNumberOfLegs() . " legs.";
-    $food_text = " It likes to eat " . $this->getFavoriteFood() . ".";
-    return $legs_text . $food_text . "\n";
+    if ($this->flowering) {
+      $text = "does";
+    } else {
+      $text = "does not";
+    }
+    return "It " . $text . " flower.\n";
+  }
+
+  /**
+   * @return bool
+   */
+  public function getFlowering() {
+    return $this->flowering;
+  }
+
+  /**
+   * @param $flowering
+   */
+  public function setFlowering($flowering) {
+    $this->$flowering = $flowering;
   }
 
 }

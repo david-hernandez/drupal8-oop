@@ -41,6 +41,19 @@ class Organism {
   }
 
   /**
+   * Load all available organisms.
+   *
+   * @return array
+   */
+  public static function loadAll() {
+    $list = [];
+    foreach (static::$organisms as $organism) {
+      $list[] = OrganismFactory::create($organism);
+    }
+    return $list;
+  }
+
+  /**
    * Load multiple organisms when given an array of ids.
    *
    * @param array $ids
@@ -52,19 +65,6 @@ class Organism {
       if (is_int($id)) {
         $list[] = OrganismFactory::create(static::$organisms[$id]);
       }
-    }
-    return $list;
-  }
-
-  /**
-   * Load all available organisms.
-   *
-   * @return array
-   */
-  public static function loadAll() {
-    $list = [];
-    foreach (static::$organisms as $organism) {
-      $list[] = OrganismFactory::create($organism);
     }
     return $list;
   }

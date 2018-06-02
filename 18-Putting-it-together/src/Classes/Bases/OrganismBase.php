@@ -35,7 +35,7 @@ abstract class OrganismBase implements OrganismInterface {
   /**
    * Retrieve the unique id number.
    *
-   * @return mixed
+   * @return integer
    */
   public function getId() {
     return $this->id;
@@ -44,7 +44,7 @@ abstract class OrganismBase implements OrganismInterface {
   /**
    * Retrieve the species name.
    *
-   * @return mixed
+   * @return string
    */
   public function getSpecies() {
     return $this->species;

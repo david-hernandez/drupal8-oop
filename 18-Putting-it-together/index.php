@@ -27,7 +27,6 @@ $ids = [333, 19];
 $list1 = Organism::loadMultiple($ids);
 foreach ($list1 as $organism) {
   print $organism->getDescription();
-
 }
 
 /**

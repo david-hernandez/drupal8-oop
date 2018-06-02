@@ -18,7 +18,7 @@ class Autoloader {
 
     /**
      * Convert the class name into a directory structure and add .php to the end so we have a real file.
-     * $filename will look like '/var/www/17-Putting-it-together/src/Classes/Organisms/Animal.php'.
+     * $filename will look like '/var/www/18-Putting-it-together/src/Classes/Organisms/Animal.php'.
      * We don't need to include 'src' anywhere because the autoloader is in the 'src' directory.
      */
     $filename = __DIR__ . "/" . str_replace("\\", '/', $class_name) . ".php";

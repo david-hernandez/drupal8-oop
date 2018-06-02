@@ -7,13 +7,15 @@ namespace Classes\Interfaces;
  */
 interface OrganismInterface {
 
-
+  /**
+   * @return string
+   */
   public function getDescription();
 
   /**
    * Retrieve the unique id number.
    *
-   * @return mixed
+   * @return integer
    */
   public function getId();
 
@@ -27,7 +29,7 @@ interface OrganismInterface {
   /**
    * Retrieve the species name.
    *
-   * @return mixed
+   * @return string
    */
   public function getSpecies();
 
