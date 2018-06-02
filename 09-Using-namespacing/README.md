@@ -199,7 +199,7 @@ That works. You will also find places, like in configurations, where you have to
 Generally, in those places you write the class as its namespace with a backslash, because you don't know the space where 
 it will be used, and in all likelihood, it will be used inside a class. Since those sort of dynamic uses can't add a 
 `use` statement on the fly, they expect the whole thing written out. Like with the `Request` example above. 
-`\Symfony\Component\HttpFoundation\Request::createFromGlobals()`
+`\Symfony\Component\HttpFoundation\Request::createFromGlobals`
 
 ### Aliasing
 
