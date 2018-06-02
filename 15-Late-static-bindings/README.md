@@ -130,6 +130,29 @@ used so that the call is inherited by a child class. If we tried to use `self` a
 `create()` method would try to return an instance of the base class instead of the child class that is extending it. We 
 don't want that.
 
+To try to make that clearer, if all this code was in the `Kingdom` base class from our other examples, and `self` was 
+used instead of `static`, we'd have a problem.
+
+```php
+abstract class Kingdom implements LivingThing {
+    ...
+    public static function create($thing) {
+        // Make some stuff.
+        return new self($stuff);
+    }
+}
+ 
+class Animal extends Kingdom {
+    ...
+}
+ 
+$animal = Animal::create($thing);
+```
+
+This won't work. The create method would inherit to `Animal`, but it would try to return an instantiated instance of 
+`Kingdom`. `self` would refer to the `Kingdom` class name. (The constructor in `Kingdom` would also inherit down to 
+`Animal` so there is no problem passing `$stuff`.)
+
 Going back to the Drupal example, take a look at Drupal's `ClassResolver`. This class deals with some of this dependency 
 injection stuff.
 
