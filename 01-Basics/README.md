@@ -17,7 +17,7 @@ $my_animal->setSpecies('Cat');
 
 When you create a new object, you instantiate it. As far as PHP is concerned, this is a bit more complicated 
 than just creating a new variable, like a plain string of text. Instantiation creates an object using the class 
-as a template; setting aside memory, and performing any required setup tasks. If I do this again, with `$my_animal2`, 
+as a template, sets aside memory, and performs any required setup tasks. If I do this again, with `$my_animal2`, 
 I now have two objects, each existing on its own and taking up its own memory.
 
 We need to know this, because there are ways to use classes without instantiating a new object. We'll get to 
