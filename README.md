@@ -7,7 +7,7 @@ compared to the procedural programming of previous versions of Drupal.
 Almost everything in this tutorial is specific to PHP, not necessarily Drupal. Any PHP developer may 
 find it helpful, but be aware that some of the examples and application-specific details will be based on Drupal 8.
 
-### Prereqiusites
+### Prerequisites
 
 Many of the topics covered are introductory, and written for a beginner, but you should have some prior PHP 
 experience. Also, this tutorial is not intended to take the place of a generic, introductory OOP tutorial. 
