@@ -24,7 +24,7 @@ If you are using an IDE, like PHP Storm, it may alert you to problems with some 
 the classes in all the directories and may think they are duplicate. The scripts themselves should run fine when 
 executing.
 
-The PHP files provided in this tutorial should be executable, but your results may vary. And, as always, If you find 
+The PHP files provided in this tutorial should be executable, but your results may vary. And, as always, if you find 
 any mistakes, please open an issue or create a pull request. Don't assume I know what I'm doing.&trade;
 
 ### Contents
