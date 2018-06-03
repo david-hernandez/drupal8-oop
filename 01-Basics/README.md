@@ -74,8 +74,8 @@ Ignore the `public` keyword. We'll discuss that in the "Visibility and Scope" st
 
 ### Members
 
-Properties, methods, constants, and anything else inside a class are called members. You may hear "class members" or "
-members of that class" or similar in conversation. That's all that means.
+Properties, methods, constants, and anything else inside a class are called members. You may hear "class members" or 
+"members of that class" or similar in conversation. That's all that means.
 
 ### Operators
 
