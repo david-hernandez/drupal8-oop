@@ -37,7 +37,7 @@ any mistakes, please open an issue or create a pull request. Don't assume I know
 * 06 - Naming conventions for classes, methods, variables, constants, etc
 * 07 - Including classes from other files and using an autoloader
 * 08 - Namespacing and how it relates to the autoloader
-* 09 - Using namespaces, `use` statements, and more on the global space
+* 09 - Using namespaces, `use` statements, and more in the global space
 * 10 - Declaring parameter types in method and function definitions
 * 11 - Interfaces
 * 12 - Abstract classes, and using them as base classes
